@@ -8,21 +8,21 @@
                 position: relative;
                 background: lightblue;
             }
-        #myAnimation {
-            width: 50px;
-            height: 70px;
-            position: absolute;
-            background-color: red;
-        }
-        #squidward {
-            width: 50px;
-            height: 110px;
-            position: absolute;
-            background-color: green;
-        }
+            #myAnimation {
+                width: 50px;
+                height: 70px;
+                position: absolute;
+                background-color: red;
+            }
+            #squidward {
+                width: 50px;
+                height: 110px;
+                position: absolute;
+                background-color: green;
+            }
         </style>
         
-        <button onclick="myMove()">Play</button>
+        <button id="btn" onclick="myMove()">Play</button>
         <br />
         <div id="myContainer">
             <img id="myAnimation" src="https://upload.wikimedia.org/wikipedia/en/4/47/Spongebob-squarepants.svg"/>
@@ -59,26 +59,26 @@
                     }
                 }
             }
-        document.onkeydown = function(e) {
-            var codeset = [87,65,83,68];
-            var x = e.keyCode;
-            if (x==65) {
-                pos -= 10;
-                elem.style.left = parseInt(elemP.left) + pos + 'px'; 
-            }
-            if (x==87) {
-                ver -= 10;
-                elem.style.top = parseInt(elemP.top) + ver + 'px'; 
-            }
-            if (x==68) {
-                pos += 10;
-                elem.style.left = parseInt(elemP.left) + pos + 'px'; 
-            }
-            if (x==83) {
-                ver += 10;
-                elem.style.top = parseInt(elemP.top) + ver + 'px'; 
-            }
-        };
+            document.onkeydown = function(e) {
+                var codeset = [87,65,83,68];
+                var x = e.keyCode;
+                if (x==65) {
+                    pos -= 10;
+                    elem.style.left = parseInt(elemP.left) + pos + 'px';
+                }
+                if (x==87) {
+                    ver -= 10;
+                    elem.style.top = parseInt(elemP.top) + ver + 'px';
+                }
+                if (x==68) {
+                    pos += 10;
+                    elem.style.left = parseInt(elemP.left) + pos + 'px';
+                }
+                if (x==83) {
+                    ver += 10;
+                    elem.style.top = parseInt(elemP.top) + ver + 'px';
+                }
+            };
         </script>
         
     </body>
