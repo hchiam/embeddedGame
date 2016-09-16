@@ -43,13 +43,18 @@
                 elem.style.left = 0 + 'px';
                 var id = setInterval(frame, 10);
                 function frame() {
-                    if (posSq == contP.width - squiP.width) {
+                    if (elem.offsetLeft > squi.offsetLeft) { //(posSq == contP.width - squiP.width) {
                         clearInterval(id);
+                        pos = 0;
+                        ver = 0;
+                        posQs = 0;
+                        squi.style.left = "0px";
+                        elem.style.left = "0px";
                     } else {
                         posSq++;
                         squi.style.top = 0 + 'px';
                         squi.style.left = parseInt(squiP.left) + posSq + 'px';
-                        if (elem.style.left > squi.style.left) {
+                        if (elem.offsetLeft > squi.offsetLeft) {
                             pos = 0;
                             ver = 0;
                             posQs = 0;
@@ -63,19 +68,19 @@
                 var codeset = [87,65,83,68];
                 var x = e.keyCode;
                 if (x==65) {
-                    pos -= 10;
+                    pos -= 15;
                     elem.style.left = parseInt(elemP.left) + pos + 'px';
                 }
                 if (x==87) {
-                    ver -= 10;
+                    ver -= 15;
                     elem.style.top = parseInt(elemP.top) + ver + 'px';
                 }
                 if (x==68) {
-                    pos += 10;
+                    pos += 15;
                     elem.style.left = parseInt(elemP.left) + pos + 'px';
                 }
                 if (x==83) {
-                    ver += 10;
+                    ver += 15;
                     elem.style.top = parseInt(elemP.top) + ver + 'px';
                 }
             };
