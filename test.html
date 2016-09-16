@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+            #myContainer {
+                width: 400px;
+                height: 400px;
+                position: relative;
+                background: lightblue;
+            }
+        #myAnimation {
+            width: 50px;
+            height: 70px;
+            position: absolute;
+            background-color: red;
+        }
+        #squidward {
+            width: 50px;
+            height: 110px;
+            position: absolute;
+            background-color: green;
+        }
+        </style>
+        
+        <button onclick="myMove()">Play</button>
+        <br />
+        <div id="myContainer">
+            <img id="myAnimation" src="https://upload.wikimedia.org/wikipedia/en/4/47/Spongebob-squarepants.svg"/>
+            <img id="squidward" src="https://upload.wikimedia.org/wikipedia/en/a/ac/Squidward.png" />
+        </div>
+        <script>
+            var elem = document.getElementById("myAnimation");
+            var cont = document.getElementById("myContainer");
+            var squi = document.getElementById("squidward");
+            var elemP = elem.getBoundingClientRect();
+            var contP = cont.getBoundingClientRect();
+            var squiP = squi.getBoundingClientRect();
+            var pos = 0;
+            var ver = 0;
+            function myMove() {
+                var posSq = 0;
+                elem.style.top = 0 + 'px';
+                elem.style.left = 0 + 'px';
+                var id = setInterval(frame, 10);
+                function frame() {
+                    if (posSq == contP.width - squiP.width) {
+                        clearInterval(id);
+                    } else {
+                        posSq++;
+                        squi.style.top = 0 + 'px';
+                        squi.style.left = parseInt(squiP.left) + posSq + 'px';
+                        if (elem.style.left > squi.style.left) {
+                            pos = 0;
+                            ver = 0;
+                            posQs = 0;
+                            squi.style.left = "0px";
+                            elem.style.left = "0px";
+                        }
+                    }
+                }
+            }
+        document.onkeydown = function(e) {
+            var codeset = [87,65,83,68];
+            var x = e.keyCode;
+            if (x==65) {
+                pos -= 10;
+                elem.style.left = parseInt(elemP.left) + pos + 'px'; 
+            }
+            if (x==87) {
+                ver -= 10;
+                elem.style.top = parseInt(elemP.top) + ver + 'px'; 
+            }
+            if (x==68) {
+                pos += 10;
+                elem.style.left = parseInt(elemP.left) + pos + 'px'; 
+            }
+            if (x==83) {
+                ver += 10;
+                elem.style.top = parseInt(elemP.top) + ver + 'px'; 
+            }
+        };
+        </script>
+        
+    </body>
+</html>
