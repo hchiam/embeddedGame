@@ -29,7 +29,7 @@ function buttonClick() {
     f = parseFloat(inpt.value);
     c = (f-32)*5/9;
     c = roundDigits(c,1);
-    lbl.innerText = " -> " + c.toString() + " C";
+    lbl.innerText = " = " + c.toString() + " C";
     count = 0;
     clearTimeout(tmr); // so new button clicks override current display timed function
     tmr = setInterval(timedFunction, 1000);
@@ -62,7 +62,7 @@ function timedFunction() {
     } else if (count==12) {
         display.innerText = Math.round(f/2+f/20)-20 + " + 2";
     } else if (count==13) {
-        display.innerText = Math.round(f/2+f/20)-20 + 2 + " C";
+        display.innerText = "~ " + (Math.round(f/2+f/20)-20 + 2).toString() + " C";
     } else {
         clearTimeout(tmr);
     }
