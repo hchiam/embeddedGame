@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body onload="setup()">
+        <style>
+            #myContainer {
+                width: 400px;
+                height: 400px;
+                position: relative;
+                background: lightblue;
+            }
+            #myAnimation {
+                width: 50px;
+                height: 70px;
+                position: absolute;
+            }
+            #squidward {
+                width: 50px;
+                height: 110px;
+                position: absolute;
+            }
+        </style>
+        
+        <input id="inpt" type="number" oninput="inputChange()"></input>
+        
+        <label> F</label>
+        
+        <label id="lbl"> -> C = (F-32) x 5/9</label>
+        
+        <button id="btn" style="display: none" onclick="buttonClick()">Calculate!</button>
+        
+        <label id="display"></label>
+        
+        <script src="app.js"></script>
+        
+    </body>
+</html>
