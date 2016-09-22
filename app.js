@@ -31,6 +31,7 @@ function buttonClick() {
     c = roundDigits(c,1);
     lbl.innerText = " -> " + c.toString() + " C";
     count = 0;
+    clearTimeout(tmr); // so new button clicks override current display timed function
     tmr = setInterval(timedFunction, 1000);
 }
 
