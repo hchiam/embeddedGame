@@ -23,16 +23,43 @@ function setup() {
 
 function inputChange() {
     btn.style.display="block";
+    checkInputNonEmpty();
 }
 
-function buttonClick() {
-    f = parseFloat(inpt.value);
-    c = (f-32)*5/9;
-    c = roundDigits(c,1);
-    lbl.innerText = " = " + c.toString() + " C";
-    count = 0;
+function checkInputNonEmpty() {
+    if (inpt.value == "") {
+        btn.style.display="none";
+    }
+}
+
+function typeIn(number) {
+    inpt.value += number;
     clearTimeout(tmr); // so new button clicks override current display timed function
-    tmr = setInterval(timedFunction, 1000);
+    display.innerText = "";
+    inputChange();
+}
+
+function backspace() {
+    inpt.value = inpt.value.slice(0,-1);
+    checkInputNonEmpty();
+}
+
+function clr() {
+    inpt.value = "";
+    btn.style.display="none";
+}
+
+function calculate() {
+    if (inpt.value != "") {
+        f = parseFloat(inpt.value);
+        c = (f-32)*5/9;
+        c = roundDigits(c,1);
+        lbl.innerText = " = " + c.toString() + " C";
+        count = 0;
+        clearTimeout(tmr); // so new button clicks override current display timed function
+        btn.style.display="none";
+        tmr = setInterval(timedFunction, 1000);
+    }
 }
 
 function timedFunction() {

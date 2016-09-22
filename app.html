@@ -18,6 +18,9 @@
                 height: 110px;
                 position: absolute;
             }
+            td {
+                text-align: center;
+            }
         </style>
         
         <input id="inpt" type="number" oninput="inputChange()"></input>
@@ -26,7 +29,34 @@
         
         <label id="lbl"> -> C = (F-32) x 5/9</label>
         
-        <button id="btn" style="display: none" onclick="buttonClick()">Calculate!</button>
+        <br>
+        
+        <table>
+            <tr>
+                <td><button id="b1" onclick="typeIn(1)">1</button></td>
+                <td><button id="b2" onclick="typeIn(2)">2</button></td>
+                <td><button id="b3" onclick="typeIn(3)">3</button></td>
+            </tr>
+            <tr>
+                <td><button id="b4" onclick="typeIn(4)">4</button></td>
+                <td><button id="b2" onclick="typeIn(5)">5</button></td>
+                <td><button id="b2" onclick="typeIn(6)">6</button></td>
+            </tr>
+            <tr>
+                <td><button id="b7" onclick="typeIn(7)">7</button></td>
+                <td><button id="b2" onclick="typeIn(8)">8</button></td>
+                <td><button id="b2" onclick="typeIn(9)">9</button></td>
+            </tr>
+            <tr>
+                <td><button id="clr" onclick="clr()">Clr</button></td>
+                <td><button id="b0" onclick="typeIn(0)">0</button></td>
+                <td><button id="backspace" onclick="backspace()">Bck</button></td>
+            </tr>
+        </table>
+        
+        <br>
+        
+        <button id="btn" style="display: none" onclick="calculate()">Calculate!</button>
         
         <label id="display"></label>
         
