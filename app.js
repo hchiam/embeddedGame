@@ -29,6 +29,8 @@ function inputChange() {
 function checkInputNonEmpty() {
     if (inpt.value == "") {
         btn.style.display="none";
+    } else {
+        btn.style.display="block";
     }
 }
 
@@ -89,7 +91,7 @@ function timedFunction() {
     } else if (count==12) {
         display.innerText = Math.round(f/2+f/20)-20 + " + 2";
     } else if (count==13) {
-        display.innerText = "\u2248 " + (Math.round(f/2+f/20)-20 + 2).toString() + " C";
+        display.innerText = "\u2248 " + (Math.round(f/2+f/20)-20 + 2).toString() + " C"; // ≈ approximate C value
     } else {
         clearTimeout(tmr);
     }
