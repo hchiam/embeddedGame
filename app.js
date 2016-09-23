@@ -89,7 +89,7 @@ function timedFunction() {
     } else if (count==12) {
         display.innerText = Math.round(f/2+f/20)-20 + " + 2";
     } else if (count==13) {
-        display.innerText = "~ " + (Math.round(f/2+f/20)-20 + 2).toString() + " C";
+        display.innerText = "\u2248 " + (Math.round(f/2+f/20)-20 + 2).toString() + " C";
     } else {
         clearTimeout(tmr);
     }
