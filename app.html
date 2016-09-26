@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster" />
+    </head>
     <body onload="setup()">
         <style>
             #myContainer {
@@ -23,42 +27,42 @@
             }
         </style>
         
-        <input id="inpt" type="number" oninput="inputChange()"></input>
+        <input id="inpt" type="number" oninput="inputChange()" class="lobsterfont"></input>
         
-        <label> F</label>
+        <label class="lobsterfont"> F</label>
         
-        <label id="lbl"> -> C = (F-32) x 5/9</label>
+        <label id="lbl" class="lobsterfont"> -> C = ( F - 32 ) &times; 5 &divide; 9</label>
         
         <br>
         
         <table>
             <tr>
-                <td><button id="b1" onclick="typeIn(1)">1</button></td>
-                <td><button id="b2" onclick="typeIn(2)">2</button></td>
-                <td><button id="b3" onclick="typeIn(3)">3</button></td>
+                <td><button id="b1" onclick="typeIn(1)" class="button lobsterfont">1</button></td>
+                <td><button id="b2" onclick="typeIn(2)" class="button lobsterfont">2</button></td>
+                <td><button id="b3" onclick="typeIn(3)" class="button lobsterfont">3</button></td>
             </tr>
             <tr>
-                <td><button id="b4" onclick="typeIn(4)">4</button></td>
-                <td><button id="b2" onclick="typeIn(5)">5</button></td>
-                <td><button id="b2" onclick="typeIn(6)">6</button></td>
+                <td><button id="b4" onclick="typeIn(4)" class="button lobsterfont">4</button></td>
+                <td><button id="b2" onclick="typeIn(5)" class="button lobsterfont">5</button></td>
+                <td><button id="b2" onclick="typeIn(6)" class="button lobsterfont">6</button></td>
             </tr>
             <tr>
-                <td><button id="b7" onclick="typeIn(7)">7</button></td>
-                <td><button id="b2" onclick="typeIn(8)">8</button></td>
-                <td><button id="b2" onclick="typeIn(9)">9</button></td>
+                <td><button id="b7" onclick="typeIn(7)" class="button lobsterfont">7</button></td>
+                <td><button id="b2" onclick="typeIn(8)" class="button lobsterfont">8</button></td>
+                <td><button id="b2" onclick="typeIn(9)" class="button lobsterfont">9</button></td>
             </tr>
             <tr>
-                <td><button id="clr" onclick="clr()">Clr</button></td>
-                <td><button id="b0" onclick="typeIn(0)">0</button></td>
-                <td><button id="backspace" onclick="backspace()">Bck</button></td>
+                <td><button id="clr" onclick="clr()" class="button lobsterfont">Clear</button></td>
+                <td><button id="b0" onclick="typeIn(0)" class="button lobsterfont">0</button></td>
+                <td><button id="backspace" onclick="backspace()" class="button lobsterfont">Back</button></td>
             </tr>
         </table>
         
         <br>
         
-        <button id="btn" style="display: none" onclick="calculate()">Calculate!</button>
+        <button id="btn" style="display: none" onclick="calculate()" class="button lobsterfont">Calculate!</button>
         
-        <label id="display"></label>
+        <label id="display" class="lobsterfont"></label>
         
         <script src="app.js"></script>
         
