@@ -16,23 +16,25 @@ td {
     border-spacing: 10px 0px;
 }
 
+.lobsterfont {
+    font-family: Lobster;
+}
+
+/* reference for button CSS styles:  http://www.w3schools.com/css/css3_buttons.asp */
+
 .button {
-    display: inline-block;
     padding: 10px 12px;
     font-size: 12px;
-    cursor: pointer;
     text-align: center;
-    text-decoration: none;
-    outline: none;
     color: #fff;
     background-color: #4CAF50;
     border: none;
     border-radius: 15px;
     box-shadow: 0 5px #999;
     position: relative;
-    -webkit-transition-duration: 0.1s; /* Safari */
     transition-duration: 0.1s;
-    overflow: hidden;
+    -webkit-transition-duration: 0.1s; /* for Safari */
+    overflow: hidden; /* to keep the "flash" within the button */
 }
 
 .button:hover {
@@ -63,8 +65,4 @@ td {
     margin: 0;
     opacity: 1;
     transition: 0s
-}
-
-.lobsterfont {
-    font-family: Lobster;
 }
