@@ -69,13 +69,13 @@ function timedFunction() {
     if (count==1) {
         display.innerText = f;
     } else if (count==2) {
-        display.innerText = f + " / 2";
+        display.innerText = f + " \u00f7 2";
     } else if (count==3) {
         display.innerText = f/2;
     } else if (count==4) {
         display.innerText = f/2 + " + " + f/2;
     } else if (count==5) {
-        display.innerText = f/2 + " + " + f/2 + " / 10";
+        display.innerText = f/2 + " + " + f/2 + " \u00f7 10";
     } else if (count==6) {
         display.innerText = f/2 + " + " + f/20;
     } else if (count==7) {
