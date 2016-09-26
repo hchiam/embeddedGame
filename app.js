@@ -67,7 +67,7 @@ function calculate() {
 function timedFunction() {
     count++;
     if (count==1) {
-        display.innerText = f;
+        display.innerText = f + " F";
     } else if (count==2) {
         display.innerText = f + " \u00f7 2";
     } else if (count==3) {
