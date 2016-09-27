@@ -5,3 +5,7 @@ This is my personal backup for testing out the code from the tutorials and is fo
 ##cat.html
 
 * "CatPhotoApp" tutorial from [www.freecodecamp.com](https://www.freecodecamp.com)
+
+##styletest.html
+
+* Testing out CSS styles and "order of operations".
