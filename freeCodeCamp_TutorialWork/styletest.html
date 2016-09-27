@@ -9,11 +9,15 @@
         color: orange;
     }
     .pink-text {
-        color: pink;
+        color: pink !important;
     }
     .blue-text {
-        color: blue;
+        color: blue !important;
     }
 </style>
 
-<h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
+<h1 id="orange-text" style="color:green" class="pink-text blue-text">Hello World!</h1>
+
+<li>order of styles matters in CSS (last), not in HTML (orderless)</li>
+<li>style > id > class</li>
+<li>"!important" in CSS overrides all other style parameter settings, unless of course there's another one with !important</li>
