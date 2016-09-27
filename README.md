@@ -10,3 +10,9 @@ Example web app for converting temperature, with steps for quick mental calculat
 * [app.html](https://github.com/hchiam/embeddedGame/blob/master/app.html) is for the structure ("organization").
 * [app.js](https://github.com/hchiam/embeddedGame/blob/master/app.js) is for the interaction ("actions").
 * [app.css](https://github.com/hchiam/embeddedGame/blob/master/app.css) is for extra presentation stuff ("style"/"looks").
+
+# freeCodeCamp_TutorialWork
+Reference code from my tutorial work in [www.freecodecamp.com](https://www.freecodecamp.com), for future reference notes.
+
+* [cat.html](https://github.com/hchiam/embeddedWebApps/blob/master/freeCodeCamp_TutorialWork/cat.html) "CatPhotoApp" tutorial.
+* [styletest.html](https://github.com/hchiam/embeddedWebApps/blob/master/freeCodeCamp_TutorialWork/styletest.html) Testing out CSS styles and "order of operations".
