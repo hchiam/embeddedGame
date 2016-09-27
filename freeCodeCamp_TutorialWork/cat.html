@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/> <!--Bootstrap is for responsive design, i.e. auto format for mobile, etc.-->
 
 <div class="container-fluid">
 
@@ -37,25 +37,53 @@
     }
 </style>
 
-<h2 class="red-text">CatPhotoApp</h2>
+<div class="row">
+    <div class="col-xs-8">
+        <h2 class="red-text text-center">CatPhotoApp (custom style)</h2>
+    </div>
+    <div class="col-xs-4">
+        <a href="#"><img class="smaller-image thick-blue-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
+    </div>
+</div>
+<h2 class="text-primary text-center">CatPhotoApp (Bootstrap built-in style)</h2>
 
 <p>Click here for <a href="#">cat photos</a>.</p>
 
-<a href="#"><img class="smaller-image thick-blue-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
+<a href="#"><img class="img-responsive thick-blue-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
+
+<br>
+<img class="img-responsive" src="https://bit.ly/fcc-running-cats" alt="Running cats."> <!--img-responsive uses Bootstrap to auto size image-->
+
+<!--all example classes from Bootstrap: "col-xs-4" (4 extra-small rows), "btn", "btn-block", "btn-primary", "btn-info", and "btn-danger"--->
+<div class="col-xs-4">
+    <div class="row">
+        <button class="btn btn-block btn-primary">Like</button>
+    </div>
+</div>
+<div class="col-xs-4">
+    <div class="row">
+        <button class="btn btn-block btn-info">Info</button>
+    </div>
+</div>
+<div class="col-xs-4">
+    <div class="row">
+        <button class="btn btn-block btn-danger">Delete</button>
+    </div>
+</div>
 
 <p class="red-text">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
 <p class="red-text">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
 
 <div class="silver-background">
-    <p>Things cats love:</p>
+    <p>Things that cats <span class="text-danger">love</span>:</p>
     <ul>
-        <li>cat nip</li>
-        <li>laser pointers</li>
+        <li>Cat nip.</li>
+        <li>Laser pointers.</li>
     </ul>
-    <p>Top 3 things cats hate:</p>
+    <p>Things that cats <span class="text-danger">hate</span>:</p>
     <ol>
-        <li>flea treatment</li>
-        <li>baths</li>
+        <li>Flea treatments.</li>
+        <li>Baths.</li>
     </ol>
 </div>
 
