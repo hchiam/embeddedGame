@@ -16,3 +16,5 @@ Reference code from my tutorial work in [www.freecodecamp.com](https://www.freec
 
 * [cat.html](https://github.com/hchiam/embeddedWebApps/blob/master/freeCodeCamp_TutorialWork/cat.html) "CatPhotoApp" tutorial.
 * [styletest.html](https://github.com/hchiam/embeddedWebApps/blob/master/freeCodeCamp_TutorialWork/styletest.html) Testing out CSS styles and "order of operations".
+
+GitHub folder at: [freeCodeCamp_TutorialWork](https://github.com/hchiam/embeddedWebApps/tree/master/freeCodeCamp_TutorialWork)
