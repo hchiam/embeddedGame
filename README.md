@@ -11,6 +11,9 @@ Example web app for converting temperature, with steps for quick mental calculat
 * [app.js](https://github.com/hchiam/embeddedGame/blob/master/app.js) is for the interaction ("actions").
 * [app.css](https://github.com/hchiam/embeddedGame/blob/master/app.css) is for extra presentation stuff ("style"/"looks").
 
+Screenshot:  (from [hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickly-in.html](http://hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickly-in.html))
+![app.jpg](https://github.com/hchiam/embeddedGame/blob/master/app.jpg)
+
 # freeCodeCamp_TutorialWork
 Reference code from my tutorial work in [www.freecodecamp.com](https://www.freecodecamp.com), for future reference notes.
 
