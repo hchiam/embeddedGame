@@ -14,10 +14,17 @@ Example web app for converting temperature, with steps for quick mental calculat
 Screenshot:  (from [hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickly-in.html](http://hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickly-in.html))
 ![app.jpg](https://github.com/hchiam/embeddedGame/blob/master/app.jpg)
 
-# freeCodeCamp_TutorialWork
+# FreeCodeCamp tutorial work
 Reference code from my tutorial work in [www.freecodecamp.com](https://www.freecodecamp.com), for future reference notes.
 
 * [cat.html](https://github.com/hchiam/embeddedWebApps/blob/master/freeCodeCamp_TutorialWork/cat.html) "CatPhotoApp" tutorial.
 * [styletest.html](https://github.com/hchiam/embeddedWebApps/blob/master/freeCodeCamp_TutorialWork/styletest.html) Testing out CSS styles and "order of operations".
 
 GitHub folder at: [freeCodeCamp_TutorialWork](https://github.com/hchiam/embeddedWebApps/tree/master/freeCodeCamp_TutorialWork)
+
+# Codecademy tutorial work
+Reference code from my tutorial work in [www.codecademy.com](https://www.codecademy.com), for future reference notes.
+
+* [makeawebsite.html](https://github.com/hchiam/embeddedWebApps/blob/master/codecademy/makeawebsite.html) html tutorial.
+
+GitHub folder at: [codecademy](https://github.com/hchiam/embeddedWebApps/tree/master/codecademy)
