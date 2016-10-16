@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+            .button-font-size {
+                font-size: 100%;
+            }
+            .container {
+                font-size: 200%;
+                /* center horizontally: */
+                text-align:center;
+                /* center vertically: */
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                /* adjust for width: */
+                transform: translateX(-50%) translateY(-50%);
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            
+            <button id="btn" class="button-font-size" onclick="timer()">Go!</button>
+            <br/>
+            <label id="h">0</label><label> :</label>
+            <label id="m">0</label><label> :</label>
+            <label id="s">0</label>
+        
+        </div>
+        
+        <script>
+            var h = document.getElementById("h");
+            var m = document.getElementById("m");
+            var s = document.getElementById("s");
+            var btn = document.getElementById("btn");
+            
+            var tmr;
+            var tmrOn = false;
+            
+            function setup() {
+                display.value = "0";
+            }
+        
+            function timer() {
+                clearTimeout(tmr); // so new button clicks override current display timed function
+                if (tmrOn == false) {
+                    tmrOn = true;
+                    btn.innerText = "Timer Going!";
+                    tmr = setInterval(timedFunction, 1000);
+                } else if (tmrOn == true) {
+                    tmrOn = false;
+                    btn.innerText = "Paused";
+                }
+            }
+            
+            function timerPause() {
+                
+            }
+            
+            function timedFunction() {
+                s.innerText = parseInt(s.innerText) + 1;
+                if (s.innerText == "60") {
+                    m.innerText = parseInt(m.innerText) + 1;
+                    s.innerText = "0";
+                }
+                if (m.innerText == "60") {
+                    h.innerText = parseInt(h.innerText) + 1;
+                    m.innerText = "0";
+                }
+                
+                if (parseInt(m.innerText) >= 10) {
+                    var audio = new Audio('bip.mp3');
+                    audio.play();
+                }
+            }
+        </script>
+        
+    </body>
+</html>
