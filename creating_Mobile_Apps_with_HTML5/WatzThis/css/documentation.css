@@ -1,3 +1,24 @@
 body {
     font-family: sans-serif;
+    text-shadow: 3px 3px 3px lightgrey;
+    
+    border: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: lightblue;    
+    box-shadow: 5px 5px black;
+    
+    background-color: grey;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+h1:hover, h2:hover, p:hover, figure:hover {
+  background: orange;
+  color: blue;
+  font-style: bold;
+  text-shadow: none;
 }
