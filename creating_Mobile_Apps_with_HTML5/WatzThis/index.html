@@ -26,29 +26,46 @@
         light[4] = "green";
         light[5] = "orange";
         function flip(whichway) {
-            document.body.style.backgroundColor = light[whichway]; 
+            document.body.style.backgroundColor = light[whichway];
+            showColour(whichway);
             stopFlip();
         }
-        function autoFlip() { 
+        function autoFlip() {
+            showColour(color); // show CURRENT flip colour:
             document.body.style.backgroundColor = light[color];
-            if (color < light.length-1) {         
-                color++;     
-            } else {         
-                color=0;     
-            }     
-            t = setTimeout("autoFlip()",speed); 
-        } 
-        function doAutoFlip(changespeed) {     
-            if (!flipping){         
-                flipping=1;   
-                speed=changespeed;      
-                autoFlip();     
-            }    
-        } 
-        function stopFlip() {     
-            clearTimeout(t);     
-            flipping=0; 
-        } 
+            // modify colour for the NEXT flip:
+            if (color > 0) {
+                color -= 2; // to go 2 colours down the list instead of just 1 at a time
+            } else {  
+                color=light.length-2; // to start at green
+            }
+            t = setTimeout("autoFlip()",speed);
+        }
+        function doAutoFlip(changespeed) {
+            if (!flipping){
+                flipping=1;
+                speed=changespeed;
+                autoFlip();
+            }
+        }
+        function stopFlip() {
+            clearTimeout(t);
+            flipping=0;
+        }
+        function showColour(index) {
+            // show the name of the colour:
+            document.getElementById("mytext").innerHTML = "Showing: " + light[index];
+            // change text colour to white if on black background:
+            if (light[index] == "black") {
+                document.getElementById("mytext").style.color = "white";
+                document.getElementById("directions").style.color = "white";
+                document.getElementsByTagName('h1')[0].style.color = "white";
+            } else {
+                document.getElementById("mytext").style.color = "black";
+                document.getElementById("directions").style.color = "black";
+                document.getElementsByTagName('h1')[0].style.color = "black";
+            }
+        }
     </script>
     <style>
         body {
@@ -91,6 +108,7 @@
             <input type="button" id="AUTO" class="bigButton" value="AUTO" onclick="doAutoFlip(1000);">
             <input type="button" id="STOP" class="bigButton" value="STOP" onclick="stopFlip();">
         </div>
+        <div id="mytext"></div> 
     </div>
     
 </body>
