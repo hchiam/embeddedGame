@@ -1,14 +1,12 @@
 body {
     font-family: sans-serif;
     text-shadow: 3px 3px 3px lightgrey;
-    
-    border: 10px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: lightblue;    
     box-shadow: 5px 5px black;
-    
     background-color: grey;
+    border-radius: 10px;
+    
+    /*shorthand based on instructor recommendation, and from https://developer.mozilla.org/en-US/docs/Web/CSS/border*/
+    border: 10px solid lightblue;
 }
 
 h1 {
