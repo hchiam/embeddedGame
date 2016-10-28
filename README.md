@@ -34,5 +34,7 @@ Reference code from my tutorial work in [education.gale.com](http://education.ga
 
 * [WatzThis](https://github.com/hchiam/embeddedWebApps/tree/master/creating_Mobile_Apps_with_HTML5/WatzThis) mobile web app tutorial.
 * [test_document.html](https://github.com/hchiam/embeddedWebApps/blob/master/creating_Mobile_Apps_with_HTML5/test_document.html) HTML5 tutorial.
+* [testGoogleMapsFramework](https://github.com/hchiam/embeddedWebApps/blob/master/creating_Mobile_Apps_with_HTML5/testGoogleMapsFramework.html) test Google Maps API.
+* [jQueryMobile_template](https://github.com/hchiam/embeddedWebApps/blob/master/creating_Mobile_Apps_with_HTML5/jQueryMobile_template.html) template JQM html file.
 
 GitHub folder at: [creating_Mobile_Apps_with_HTML5](https://github.com/hchiam/embeddedWebApps/tree/master/creating_Mobile_Apps_with_HTML5)
