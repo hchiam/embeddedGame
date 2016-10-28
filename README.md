@@ -20,14 +20,14 @@ Reference code from my tutorial work in [www.freecodecamp.com](https://www.freec
 * [cat.html](https://github.com/hchiam/embeddedWebApps/blob/master/freeCodeCamp_TutorialWork/cat.html) "CatPhotoApp" tutorial.
 * [styletest.html](https://github.com/hchiam/embeddedWebApps/blob/master/freeCodeCamp_TutorialWork/styletest.html) Testing out CSS styles and "order of operations".
 
-GitHub folder at: [freeCodeCamp_TutorialWork](https://github.com/hchiam/embeddedWebApps/tree/master/freeCodeCamp_TutorialWork)
+My GitHub folder at: [freeCodeCamp_TutorialWork](https://github.com/hchiam/embeddedWebApps/tree/master/freeCodeCamp_TutorialWork)
 
 # Codecademy tutorial work
 Reference code from my tutorial work in [www.codecademy.com](https://www.codecademy.com), for future reference notes.
 
 * [makeawebsite.html](https://github.com/hchiam/embeddedWebApps/blob/master/codecademy/makeawebsite.html) html tutorial.
 
-GitHub folder at: [codecademy](https://github.com/hchiam/embeddedWebApps/tree/master/codecademy)
+My GitHub folder at: [codecademy](https://github.com/hchiam/embeddedWebApps/tree/master/codecademy)
 
 # Creating Mobile Web Apps with HTML5 tutorial work
 Reference code from my tutorial work in [education.gale.com](http://education.gale.com/l-camb95167/online-courses/mobile-app-development), for future reference notes.
@@ -38,4 +38,4 @@ Reference code from my tutorial work in [education.gale.com](http://education.ga
 * [jQueryMobile_template](https://github.com/hchiam/embeddedWebApps/blob/master/creating_Mobile_Apps_with_HTML5/jQueryMobile_template.html) template JQM html file.
 * [data-icons](https://github.com/hchiam/embeddedWebApps/blob/master/creating_Mobile_Apps_with_HTML5/data-icons.html) button data-icon examples.
 
-GitHub folder at: [creating_Mobile_Apps_with_HTML5](https://github.com/hchiam/embeddedWebApps/tree/master/creating_Mobile_Apps_with_HTML5)
+My GitHub folder at: [creating_Mobile_Apps_with_HTML5](https://github.com/hchiam/embeddedWebApps/tree/master/creating_Mobile_Apps_with_HTML5)
