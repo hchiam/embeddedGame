@@ -24,18 +24,36 @@
 	</head>
 	<body>
 		
-		<div data-role="page">
+		<div data-role="page" id="linkablePageId">
 			
-			<div data-role="header">
+			<div data-role="header" data-position="fixed">
 				<h1>My Title</h1>
 			</div><!-- /header -->
 			
 			<div data-role="content">
-				<p>Hello world</p>
+				<p>Hello world. <a href="#alternatePageID">Click here!</a></p>
 			</div><!-- /content -->
 			
-			<div data-role="footer">
+			<div data-role="footer" data-position="fixed">
 				<p>Footer text</p>
+			</div><!-- /footer -->
+			
+		</div><!-- /page -->
+		
+		<div data-role="page" id="alternatePageID">
+			
+			<div data-role="header" data-position="fixed">
+				<a href="javascript:history.go(-1)">Back</a>
+				<h1>Other Title</h1>
+				<a href="#linkablePageId">Home</a>
+			</div><!-- /header -->
+			
+			<div data-role="content">
+				<p>Other world! <a href="#linkablePageId">Click here to return.</a></p>
+			</div><!-- /content -->
+			
+			<div data-role="footer" data-position="fixed">
+				<p>Other Footer</p>
 			</div><!-- /footer -->
 			
 		</div><!-- /page -->
