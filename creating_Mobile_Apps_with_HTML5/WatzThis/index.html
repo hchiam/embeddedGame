@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html manifest="http://www.watzthis.com/watzthis.appcache"> <!--example html link to manifest file for offline storage cache-->
 <head>
     
     <!--You can find this sample code here: https://github.com/hchiam/embeddedWebApps/blob/master/creating_Mobile_Apps_with_HTML5/WatzThis/index.html-->
@@ -68,6 +68,15 @@
                 document.getElementsByTagName('h1')[0].style.color = "black";
             }
         }
+        function getLoc() {
+            var gps = navigator.geolocation.getCurrentPosition(
+            function(position) {
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                alert("Your Latitude is: " + latitude + " and your longitude is: " + longitude + "! Have fun!");
+            }
+            );
+        }
     </script>
     <style>
         body {
@@ -110,7 +119,11 @@
             <input type="button" id="AUTO" class="bigButton" value="AUTO" onclick="doAutoFlip(1000);">
             <input type="button" id="STOP" class="bigButton" value="STOP" onclick="stopFlip();">
         </div>
-        <div id="mytext"></div> 
+        <div id="geolocation">
+            <input type="button" id="latlong" class="bigButton" value="GET LOC" onclick="getLoc();">
+        </div>
+        <div id="mytext">
+        </div> 
     </div>
     
 </body>

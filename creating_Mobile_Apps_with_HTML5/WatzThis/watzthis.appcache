@@ -1,0 +1,24 @@
+CACHE MANIFEST
+
+# version 1 (change one character in manifest file = force browser to reload all cache files)
+
+CACHE:
+index.html
+docs.html
+watzthis.css
+buttons.png
+http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css
+http://code.jquery.com/jquery-1.6.4.min.js
+http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js
+
+NETWORK:
+# things you do NOT want backed up in offline cache
+/register.html
+
+FALLBACK:
+# list of files that browser should show if a request file cannot be accessed (file name(s) and replacement file name), like a 404 not found error page
+*.html  /offline.html
+
+
+
+# how to reference this file in html: <html manifest="http://www.watzthis.com/watzthis.appcache">
