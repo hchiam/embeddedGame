@@ -15,7 +15,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes">   
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     
+    <!-- the following script tag brings in the Google Maps API functions -->
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    
     <script>
+        //initialize variables for colour buttons and auto mode:
         var light = new Array();
         var t;
         var color=0;
@@ -27,22 +31,28 @@
         light[3] = "blue";
         light[4] = "green";
         light[5] = "orange";
+        
+        // change screen colour
         function flip(whichway) {
             document.body.style.backgroundColor = light[whichway];
             showColour(whichway);
             stopFlip();
         }
+        
+        // change screen color automatically at interval set by global speed variable
         function autoFlip() {
             showColour(color); // show CURRENT flip colour:
             document.body.style.backgroundColor = light[color];
             // modify colour for the NEXT flip:
-            if (color > 0) {
-                color -= 2; // to go 2 colours down the list instead of just 1 at a time
-            } else {  
-                color=light.length-2; // to start at green
+            if (color < light.length-1) {
+                color++;
+            } else {
+                color=0;
             }
             t = setTimeout("autoFlip()",speed);
         }
+        
+        // start auto-flipping if not already going
         function doAutoFlip(changespeed) {
             if (!flipping){
                 flipping=1;
@@ -50,10 +60,14 @@
                 autoFlip();
             }
         }
+        
+        // stop auto-flipping
         function stopFlip() {
             clearTimeout(t);
             flipping=0;
         }
+        
+        // display name of colour
         function showColour(index) {
             // show the name of the colour:
             document.getElementById("mytext").innerHTML = "Showing: " + light[index];
@@ -68,20 +82,63 @@
                 document.getElementsByTagName('h1')[0].style.color = "black";
             }
         }
+        
+        // get element by id
+        function $(id) {
+            return document.getElementById(id);
+        }
+        
+        // initialize map variables:
+        var pin = {};
+        var map = {};
+        
+        // use geolocation API to get latitude and longitude of user device
+        // if browser supports geolocation, display current user device location on a map
         function getLoc() {
-            var gps = navigator.geolocation.getCurrentPosition(
-            function(position) {
-                var latitude = position.coords.latitude;
-                var longitude = position.coords.longitude;
-                alert("Your Latitude is: " + latitude + " and your longitude is: " + longitude + "! Have fun!");
+            //// show popup message displaying coordinates
+            //var gps = navigator.geolocation.getCurrentPosition(
+            //    function(position) {
+            //        var latitude = position.coords.latitude;
+            //        var longitude = position.coords.longitude;
+            //        alert("Your Latitude is: " + latitude + " and your longitude is: " + longitude + "! Have fun!");
+            //    }
+            //);
+            
+            // if browser supports geolocation, get current location and display on a map
+            if (navigator.geolocation) {
+                // get location
+                var gps = navigator.geolocation;
+                // show location on a map
+                gps.getCurrentPosition(function(position) {
+                    var latLong = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+                    var mapOptions = {zoom:6, center:latLong, mapTypeId: google.maps.MapTypeId.ROADMAP};
+                    // create map area canvas
+                    map = new google.maps.Map($("map_canvas"), mapOptions);
+                    // create pin at where 'you' are
+                    pin = new google.maps.Marker({
+                        position: latLong,
+                        map: map,
+                        title: "There you are!"
+                    });
+                    // create message pointing at pin location
+                    var infowindow = new google.maps.InfoWindow({
+                        map: map,
+                        position: latLong,
+                        content: 'Location found using HTML5.'
+                    });
+                });
+            } else {
+               // if browser does not support geolocation, display alert saying so
+               alert("Your browser doesn't support geolocation."); 
             }
-            );
         }
     </script>
+    
     <style>
         body {
             font-family:arial, helvetica;
             text-align: center;
+            margin: 0px; padding: 0px;
         }
         #container {}
         #directions, #flashlight, #danceparty {
@@ -101,29 +158,36 @@
 
 <body>
     
-    <h1>WatzThis?</h1>
-    <div id="directions">
-    <ol>
-        <li>Use the top row of buttons to turn the flashlight on or off, or to make the light red.</li>
-        <li>Use the 2nd row of buttons to turn on and off your automatic flashing color light dance party.</li>
-    </ol>
-    </div>
-    
-    <div id="container">
-        <div id="flashlight">
-            <input type="button" id="OFF" class="bigButton" value="OFF" onclick="flip(0);">
-            <input type="button" id="ON" class="bigButton" value="ON" onclick="flip(1);">
-            <input type="button" id="RED" class="bigButton" value="RED" onclick="flip(2);">
+    <div id="main">
+        
+        <h1>WatzThis?</h1>
+        
+        <div id="container"> 
+            <div id="directions">
+                <ol>
+                    <li>Use the top row of buttons to turn the flashlight on or off, or to make the light red.</li>
+                    <li>Use the 2nd row of buttons to turn on and off your automatic flashing color light dance party.</li>
+                </ol>
+            </div>
+            <div id="flashlight">
+                <input type="button" id="OFF" class="bigButton" value="OFF" onclick="flip(0);">
+                <input type="button" id="ON" class="bigButton" value="ON" onclick="flip(1);">
+                <input type="button" id="RED" class="bigButton" value="RED" onclick="flip(2);">
+            </div>
+            <div id="danceparty">
+                <input type="button" id="AUTO" class="bigButton" value="AUTO" onclick="doAutoFlip(1000);">
+                <input type="button" id="STOP" class="bigButton" value="STOP" onclick="stopFlip();">
+            </div>
+            <div id="geolocation">
+                <input type="button" id="latlong" class="bigButton" value="GET LOC" onclick="getLoc();">
+            </div>
+            <div id="mytext">
+            </div> 
         </div>
-        <div id="danceparty">
-            <input type="button" id="AUTO" class="bigButton" value="AUTO" onclick="doAutoFlip(1000);">
-            <input type="button" id="STOP" class="bigButton" value="STOP" onclick="stopFlip();">
+        
+        <div id="map_canvas" style="width: 300px; height: 300px; float: left; border: 1px solid black;">
         </div>
-        <div id="geolocation">
-            <input type="button" id="latlong" class="bigButton" value="GET LOC" onclick="getLoc();">
-        </div>
-        <div id="mytext">
-        </div> 
+        
     </div>
     
 </body>
