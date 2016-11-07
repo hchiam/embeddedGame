@@ -15,7 +15,7 @@ Screenshot:  (from [hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickl
 ![app.jpg](https://github.com/hchiam/embeddedGame/blob/master/app.jpg)
 
 # FreeCodeCamp tutorial work
-Reference code from my tutorial work in [www.freecodecamp.com](https://www.freecodecamp.com), for future reference notes.
+Reference code from my tutorial work in [www.freecodecamp.com/hchiam](https://www.freecodecamp.com/hchiam), for future reference notes.
 
 * [cat.html](https://github.com/hchiam/embeddedWebApps/blob/master/freeCodeCamp_TutorialWork/cat.html) "CatPhotoApp" tutorial.
 * [styletest.html](https://github.com/hchiam/embeddedWebApps/blob/master/freeCodeCamp_TutorialWork/styletest.html) Testing out CSS styles and "order of operations".
