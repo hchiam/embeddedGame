@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="randomQuoteMachine.css">
+        <script type="text/javascript" src="randomQuoteMachine.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!--for Lobster font-->
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <!--for twitter icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        
+        <script type="text/javascript" src="http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&jsonp=parseQuote"></script>
+        
+        <script type="text/javascript">
+          function parseQuote(response) {
+            document.getElementById("quote").innerHTML = " " + response.quoteText;
+            document.getElementById("author").innerHTML = "- " + response.quoteAuthor;
+          }
+        </script>
+    </head>
+    
+    <body>
+        <div class="container-fluid text-center">
+          
+          <p id="title">Random Quote Generator</p>
+          
+          <div class="focus">
+            
+            <p class="fa fa-quote-left" id="quote">[Quote]</p>
+            <p id="author">[Author]</p>
+            
+            <br/>
+            
+            <a href="https://twitter.com/share"><button class="btn btn-info"><i class="fa fa-twitter"></i> Tweet</button></a>
+            
+            <button class="btn btn-info" onClick="getNewQuote()"><i class="fa fa-refresh fa-spin"></i> New Quote</button>
+          </div>
+          
+          <a href="https://www.freecodecamp.com/hchiam">by hchiam</a>
+          
+        </div>
+        
+        <!--For the quote to show on page load, this script has to be at the end of the body:-->
+        <script type="text/javascript" src="http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&jsonp=parseQuote&lang=en"></script>
+    </body>
+</html>

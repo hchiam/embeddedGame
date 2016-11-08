@@ -1,0 +1,27 @@
+p {
+  font-family: Lobster, Monospace;
+  color: white;
+}
+
+body {
+  background: #322f30;
+}
+
+#title {
+  font-size: large;
+}
+
+#quote {
+  font-size: xx-large;
+}
+
+#author {
+  font-size: xx-large;
+}
+
+.focus {
+  background: grey;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
