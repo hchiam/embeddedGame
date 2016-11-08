@@ -13,8 +13,7 @@
         <!--for twitter icon-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         
-        <!--for the quote & author-->
-        <script type="text/javascript" src="http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&jsonp=parseQuote&lang=en"></script>
+        <!--(1/2) for the quote & author-->
         <script type="text/javascript">
           function parseQuote(response) {
             document.getElementById("quote").innerHTML = " " + response.quoteText;
@@ -44,5 +43,8 @@
           
         </div>
         
+        <!--(2/2) for the quote & author-->
+        <!--This script has to be at the end of the body:-->
+        <script type="text/javascript" src="http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&jsonp=parseQuote&lang=en"></script>
     </body>
 </html>
