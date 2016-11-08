@@ -10,6 +10,12 @@ This is my personal backup for testing out the code from the tutorials and is fo
 
 * Testing out CSS styles and "order of operations".
 
+##randomQuoteMachine (.html, .css, .js)
+
+* Example with jQuery code to call an API by using an HTTP URL with parameters, to then parse the data fields from the JSON data reply (i.e. get its quote and author fields), and to output those fields as text in html elements.
+
 #More:
 
 [codepen.io/hchiam](https://codepen.io/hchiam)
+
+[www.freecodecamp.com/hchiam](https://www.freecodecamp.com/hchiam)

@@ -19,6 +19,7 @@ Reference code from my tutorial work in [www.freecodecamp.com/hchiam](https://ww
 
 * [cat.html](https://github.com/hchiam/embeddedWebApps/blob/master/freeCodeCamp_TutorialWork/cat.html) "CatPhotoApp" tutorial.
 * [styletest.html](https://github.com/hchiam/embeddedWebApps/blob/master/freeCodeCamp_TutorialWork/styletest.html) Testing out CSS styles and "order of operations".
+* [randomQuoteMachine(.html, .css, .js)](https://github.com/hchiam/embeddedWebApps/blob/master/freeCodeCamp_TutorialWork/randomQuoteMachine) Example with jQuery code to call an API by using an HTTP URL with parameters, to then parse the data fields from the JSON data reply (i.e. get its quote and author fields), and to output those fields as text in html elements.
 
 My GitHub folder at: [freeCodeCamp_TutorialWork](https://github.com/hchiam/embeddedWebApps/tree/master/freeCodeCamp_TutorialWork)
 
