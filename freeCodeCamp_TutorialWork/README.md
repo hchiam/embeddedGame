@@ -18,4 +18,4 @@ This is my personal backup for testing out the code from the tutorials and is fo
 
 [codepen.io/hchiam](https://codepen.io/hchiam)
 
-[www.freecodecamp.com/hchiam](https://www.freecodecamp.com/hchiam)
+[freecodecamp.com/hchiam](https://www.freecodecamp.com/hchiam)
