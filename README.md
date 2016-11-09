@@ -38,5 +38,6 @@ Reference code from my tutorial work in [education.gale.com](http://education.ga
 * [testGoogleMapsFramework](https://github.com/hchiam/embeddedWebApps/blob/master/creating_Mobile_Apps_with_HTML5/testGoogleMapsFramework.html) test Google Maps API.
 * [jQueryMobile_template](https://github.com/hchiam/embeddedWebApps/blob/master/creating_Mobile_Apps_with_HTML5/jQueryMobile_template.html) template JQM html file.
 * [data-icons](https://github.com/hchiam/embeddedWebApps/blob/master/creating_Mobile_Apps_with_HTML5/data-icons.html) button data-icon examples.
+* [testSVG](https://github.com/hchiam/embeddedWebApps/blob/master/creating_Mobile_Apps_with_HTML5/testSVG) You can create and embed SVG vector images as if you were writing HTML files!
 
 My GitHub folder at: [creating_Mobile_Apps_with_HTML5](https://github.com/hchiam/embeddedWebApps/tree/master/creating_Mobile_Apps_with_HTML5)
