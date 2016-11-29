@@ -1,9 +1,3 @@
-# embedded game
-HTML JavaScript game that can be embedded into a blog post:
-
-* [test.html](https://github.com/hchiam/embeddedGame/blob/master/test.html) is for the structure ("organization").
-* [test.js](https://github.com/hchiam/embeddedGame/blob/master/test.js) is for the interaction ("actions").
-
 # embedded app
 Example web app for converting temperature, with steps for quick mental calculation:
 
@@ -13,6 +7,12 @@ Example web app for converting temperature, with steps for quick mental calculat
 
 Screenshot:  (from [hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickly-in.html](http://hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickly-in.html))
 ![app.jpg](https://github.com/hchiam/embeddedGame/blob/master/app.jpg)
+
+# embedded game
+Very simple HTML JavaScript game that can be embedded into a blog post:
+
+* [test.html](https://github.com/hchiam/embeddedGame/blob/master/test.html) is for the structure ("organization").
+* [test.js](https://github.com/hchiam/embeddedGame/blob/master/test.js) is for the interaction ("actions").
 
 # FreeCodeCamp tutorial work
 Reference code from my tutorial work in [www.freecodecamp.com/hchiam](https://www.freecodecamp.com/hchiam), for future reference notes.
