@@ -8,6 +8,23 @@ Example web app for converting temperature, with steps for quick mental calculat
 Screenshot:  (from [hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickly-in.html](http://hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickly-in.html))
 ![app.jpg](https://github.com/hchiam/embeddedGame/blob/master/app.jpg)
 
+# My Web Dev Sandboxes (Practice with Online Tutorials):
+
+## SASS sandbox:
+[https://github.com/hchiam/sassSandbox](https://github.com/hchiam/sassSandbox)
+
+## React.js sandbox:
+[https://github.com/hchiam/reactjsSandbox](https://github.com/hchiam/reactjsSandbox)
+
+## Node.js sandbox:
+[https://github.com/hchiam/nodejsSandbox](https://github.com/hchiam/nodejsSandbox)
+
+## SQL sandbox:
+[https://github.com/hchiam/sqlSandbox](https://github.com/hchiam/sqlSandbox)
+
+## Angular.js sandbox:
+[https://github.com/hchiam/angularjsSandbox](https://github.com/hchiam/angularjsSandbox)
+
 # embedded game
 Very simple HTML JavaScript game that can be embedded into a blog post:
 
@@ -46,18 +63,3 @@ Reference code from my tutorial work in [education.gale.com](http://education.ga
 * [test_document.html](https://github.com/hchiam/embeddedWebApps/blob/master/creating_Mobile_Apps_with_HTML5/test_document.html) HTML5 tutorial.
 
 My GitHub folder at: [creating_Mobile_Apps_with_HTML5](https://github.com/hchiam/embeddedWebApps/tree/master/creating_Mobile_Apps_with_HTML5)
-
-# SASS sandbox:
-[https://github.com/hchiam/sassSandbox](https://github.com/hchiam/sassSandbox)
-
-# React.js sandbox:
-[https://github.com/hchiam/reactjsSandbox](https://github.com/hchiam/reactjsSandbox)
-
-# Node.js sandbox:
-[https://github.com/hchiam/nodejsSandbox](https://github.com/hchiam/nodejsSandbox)
-
-# SQL sandbox:
-[https://github.com/hchiam/sqlSandbox](https://github.com/hchiam/sqlSandbox)
-
-# Angular.js sandbox:
-[https://github.com/hchiam/angularjsSandbox](https://github.com/hchiam/angularjsSandbox)
