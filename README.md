@@ -8,22 +8,24 @@ Example web app for converting temperature, with steps for quick mental calculat
 Screenshot:  (from [hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickly-in.html](http://hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickly-in.html))
 ![app.jpg](https://github.com/hchiam/embeddedGame/blob/master/app.jpg)
 
+
 # My Web Dev Sandboxes (Practice with Online Tutorials):
 
 ## SASS sandbox:
 [https://github.com/hchiam/sassSandbox](https://github.com/hchiam/sassSandbox)
 
-## React.js sandbox:
-[https://github.com/hchiam/reactjsSandbox](https://github.com/hchiam/reactjsSandbox)
+## Angular.js sandbox:
+[https://github.com/hchiam/angularjsSandbox](https://github.com/hchiam/angularjsSandbox)
 
 ## Node.js sandbox:
 [https://github.com/hchiam/nodejsSandbox](https://github.com/hchiam/nodejsSandbox)
 
+## React.js sandbox:
+[https://github.com/hchiam/reactjsSandbox](https://github.com/hchiam/reactjsSandbox)
+
 ## SQL sandbox:
 [https://github.com/hchiam/sqlSandbox](https://github.com/hchiam/sqlSandbox)
 
-## Angular.js sandbox:
-[https://github.com/hchiam/angularjsSandbox](https://github.com/hchiam/angularjsSandbox)
 
 # embedded game
 Very simple HTML JavaScript game that can be embedded into a blog post:
