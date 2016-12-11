@@ -26,6 +26,12 @@ Screenshot:  (from [hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickl
 ## SQL sandbox:
 [https://github.com/hchiam/sqlSandbox](https://github.com/hchiam/sqlSandbox)
 
+## jQuery sandbox:
+[https://github.com/hchiam/jQuerySandbox](https://github.com/hchiam/jQuerySandbox)
+
+## Karma sandbox:
+[https://github.com/hchiam/karmaSandbox](https://github.com/hchiam/karmaSandbox)
+
 
 # embedded game
 Very simple HTML JavaScript game that can be embedded into a blog post:
