@@ -32,6 +32,8 @@ Screenshot:  (from [hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickl
 ## Karma sandbox:
 [https://github.com/hchiam/karmaSandbox](https://github.com/hchiam/karmaSandbox)
 
+## Ruby on Rails sandbox:
+[https://github.com/hchiam/rubyOnRailsSandbox](https://github.com/hchiam/rubyOnRailsSandbox)
 
 # embedded game
 Very simple HTML JavaScript game that can be embedded into a blog post:
