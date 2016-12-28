@@ -1,3 +1,7 @@
+# game using Phaser framework for HTML5
+
+See [phaserGame](https://github.com/hchiam/phaserGame).
+
 # embedded app
 Example web app for converting temperature, with steps for quick mental calculation:
 
