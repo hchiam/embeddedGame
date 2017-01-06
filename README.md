@@ -15,6 +15,9 @@ Screenshot:  (from [hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickl
 
 # My Web Dev Sandboxes (Practice with Online Tutorials):
 
+## MEAN Stack Web Dev Practice:
+[https://github.com/hchiam/webDevMEANStack](https://github.com/hchiam/webDevMEANStack)
+
 ## Angular.js sandbox:
 [https://github.com/hchiam/angularjsSandbox](https://github.com/hchiam/angularjsSandbox)
 
