@@ -45,6 +45,10 @@ Screenshot:  (from [hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickl
 ## Ruby on Rails sandbox:
 [https://github.com/hchiam/rubyOnRailsSandbox](https://github.com/hchiam/rubyOnRailsSandbox)
 
+# Code7 Project
+
+https://github.com/hchiam/code7
+
 # embedded game
 Very simple HTML JavaScript game that can be embedded into a blog post:
 
