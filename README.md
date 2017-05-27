@@ -63,32 +63,4 @@ My GitHub folder at: [creating_Mobile_Apps_with_HTML5](https://github.com/hchiam
 
 # My Web Dev Sandboxes (Practice with Online Tutorials):
 
-## MEAN Stack Web Dev Practice:
-[https://github.com/hchiam/webDevMEANStack](https://github.com/hchiam/webDevMEANStack)
-
-## Angular.js sandbox:
-[https://github.com/hchiam/angularjsSandbox](https://github.com/hchiam/angularjsSandbox)
-
-## SASS sandbox:
-[https://github.com/hchiam/sassSandbox](https://github.com/hchiam/sassSandbox)
-
-## Node.js sandbox:
-[https://github.com/hchiam/nodejsSandbox](https://github.com/hchiam/nodejsSandbox)
-
-## React.js sandbox:
-[https://github.com/hchiam/reactjsSandbox](https://github.com/hchiam/reactjsSandbox)
-
-## SQL sandbox:
-[https://github.com/hchiam/sqlSandbox](https://github.com/hchiam/sqlSandbox)
-
-## jQuery sandbox:
-[https://github.com/hchiam/jQuerySandbox](https://github.com/hchiam/jQuerySandbox)
-
-## JavaScript sandbox:
-[https://github.com/hchiam/javascriptSandbox](https://github.com/hchiam/javascriptSandbox)
-
-## Karma sandbox:
-[https://github.com/hchiam/karmaSandbox](https://github.com/hchiam/karmaSandbox)
-
-## Ruby on Rails sandbox:
-[https://github.com/hchiam/rubyOnRailsSandbox](https://github.com/hchiam/rubyOnRailsSandbox)
+See [github.com/hchiam/learning](https://github.com/hchiam/learning)
