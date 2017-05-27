@@ -1,3 +1,7 @@
+# What is this?
+
+This is a collection of HTML5-related apps I've made that can be embedded into HTML pages, such as blog posts.
+
 # game using Phaser framework for HTML5
 
 See [phaserGame](https://github.com/hchiam/phaserGame).
