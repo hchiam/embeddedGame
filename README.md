@@ -19,13 +19,13 @@ Screenshot:  (from [hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickl
 
 # Code7 Project
 
-https://github.com/hchiam/code7
+[https://github.com/hchiam/code7](github.com/hchiam/code7)
 
 # embedded game
 Very simple HTML JavaScript game that can be embedded into a blog post:
 
-* [test.html](https://github.com/hchiam/embeddedGame/blob/master/test.html) is for the structure ("organization").
-* [test.js](https://github.com/hchiam/embeddedGame/blob/master/test.js) is for the interaction ("actions").
+* [test.html](https://github.com/hchiam/embeddedWebApps/blob/master/test-game/test.html) is for the structure ("organization").
+* [test.js](https://github.com/hchiam/embeddedWebApps/blob/master/test-game/test.js) is for the interaction ("actions").
 
 # FreeCodeCamp tutorial work
 Reference code from my tutorial work in [www.freecodecamp.com/hchiam](https://www.freecodecamp.com/hchiam), for future reference notes.
@@ -62,5 +62,7 @@ Reference code from my tutorial work in [education.gale.com](http://education.ga
 My GitHub folder at: [creating_Mobile_Apps_with_HTML5](https://github.com/hchiam/embeddedWebApps/tree/master/creating_Mobile_Apps_with_HTML5)
 
 # My Web Dev Sandboxes (Practice with Online Tutorials):
+
+...
 
 See [github.com/hchiam/learning](https://github.com/hchiam/learning)
