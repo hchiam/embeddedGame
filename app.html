@@ -1,82 +1,92 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="app.css">
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster" />
+      <link rel="stylesheet" href="app.css">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster" />
     </head>
     <body onload="setup()">
+      
+      <p id='fillertext'></p>
+      
+      <div id='main-content'>
         
         <p><b>How to CONVERT TEMPERATURE QUICKLY in Your Head:</b></p>
         
         <table class="specialtable">
-            <tr class="lobsterfont">
-                <td>Exact Equation:</td>
-                <td>Easier Mental Shortcut:</td>
-                <td>Error:</td>
-            </tr>
-            <tr>
-                <td style="background-color: white;">C = (F-32) &times; 5&divide;9</td>
-                <td style="background-color: white;">C = F&divide;2 + (F&divide;2)&divide;10 - 18*</td>
-                <td style="background-color: white;">Within 1 degree + 1% of F.</td>
-            </tr>
-            <tr>
-                <td></td>
-            </tr>
-            <tr>
-                <td style="background-color: white;">F = C &times; 9&divide;5 + 32</td>
-                <td style="background-color: white;">F = C&times;2 - (C&times;2)&divide;10 + 32</td>
-                <td style="background-color: white;">0</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+          <tr class="lobsterfont">
+            <td>Exact Equation:</td>
+            <td>Easier Mental Shortcut:</td>
+            <td>Error:</td>
+          </tr>
+          <tr>
+            <td style="background-color: white;">C = (F-32) &times; 5&divide;9</td>
+            <td style="background-color: white;">C = F&divide;2 + (F&divide;2)&divide;10 - 18*</td>
+            <td style="background-color: white;">Within 1 degree + 1% of F.</td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td style="background-color: white;">F = C &times; 9&divide;5 + 32</td>
+            <td style="background-color: white;">F = C&times;2 - (C&times;2)&divide;10 + 32</td>
+            <td style="background-color: white;">0</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
         </table>
-        *<font size="1"> - 18 = - 20 + 2</font>
+        <p>*<font size="1"> - 18 = - 20 + 2</font></p>
+        
         <br>
         <br>
         
         <p><b>Animated CALCULATOR:</b></p>
         
-        <input id="inpt" type="number" oninput="inputChange()" class="lobsterfont"></input>
+        <p>
+          <input id="inpt" type="number" oninput="inputChange()" class="lobsterfont"></input>
+          <label class="lobsterfont"> F</label>
+          <label id="lbl" class="lobsterfont"> -> C = ( F - 32 ) &times; 5 &divide; 9</label>
+        </p>
         
-        <label class="lobsterfont"> F</label>
-        
-        <label id="lbl" class="lobsterfont"> -> C = ( F - 32 ) &times; 5 &divide; 9</label>
-        
+        <label id="display" class="lobsterfont"></label>
         <br>
         
         <table>
-            <tr>
-                <td><button id="b1" onclick="typeIn(1)" class="button">1</button></td>
-                <td><button id="b2" onclick="typeIn(2)" class="button">2</button></td>
-                <td><button id="b3" onclick="typeIn(3)" class="button">3</button></td>
-            </tr>
-            <tr>
-                <td><button id="b4" onclick="typeIn(4)" class="button">4</button></td>
-                <td><button id="b2" onclick="typeIn(5)" class="button">5</button></td>
-                <td><button id="b2" onclick="typeIn(6)" class="button">6</button></td>
-            </tr>
-            <tr>
-                <td><button id="b7" onclick="typeIn(7)" class="button">7</button></td>
-                <td><button id="b2" onclick="typeIn(8)" class="button">8</button></td>
-                <td><button id="b2" onclick="typeIn(9)" class="button">9</button></td>
-            </tr>
-            <tr>
-                <td><button id="clr" onclick="clr()" class="button">Clear</button></td>
-                <td><button id="b0" onclick="typeIn(0)" class="button">0</button></td>
-                <td><button id="backspace" onclick="backspace()" class="button">Back</button></td>
-            </tr>
+          <tr>
+            <td><button id="b1" onclick="typeIn(1)" class="button">1</button></td>
+            <td><button id="b2" onclick="typeIn(2)" class="button">2</button></td>
+            <td><button id="b3" onclick="typeIn(3)" class="button">3</button></td>
+          </tr>
+          <tr>
+            <td><button id="b4" onclick="typeIn(4)" class="button">4</button></td>
+            <td><button id="b2" onclick="typeIn(5)" class="button">5</button></td>
+            <td><button id="b2" onclick="typeIn(6)" class="button">6</button></td>
+          </tr>
+          <tr>
+            <td><button id="b7" onclick="typeIn(7)" class="button">7</button></td>
+            <td><button id="b2" onclick="typeIn(8)" class="button">8</button></td>
+            <td><button id="b2" onclick="typeIn(9)" class="button">9</button></td>
+          </tr>
+          <tr>
+            <td><button id="clr" onclick="clr()" class="button">Clear</button></td>
+            <td><button id="b0" onclick="typeIn(0)" class="button">0</button></td>
+            <td><button id="backspace" onclick="backspace()" class="button">Back</button></td>
+          </tr>
         </table>
         
         <br>
         
         <button id="btn" style="display: none" onclick="calculate()" class="button">Calculate!</button>
         
-        <label id="display" class="lobsterfont"></label>
-        
-        <script src="app.js"></script>
-        
+      </div>
+      
+      <p id='bottom-link'>Original blog post: <a href='http://hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickly-in.html' target="_blank">http://hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickly-in.html</a>
+      </p>
+      
+      <script src="app.js"></script>
+      
     </body>
+
 </html>

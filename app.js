@@ -1,3 +1,21 @@
+var fullPageURL = 'https://codepen.io/hchiam/full/NjmOdW/';
+
+function setFillertextByUrlDetection() { // for codepen
+    let thisUrl = document.URL;
+    if (thisUrl.indexOf('full') === -1) {
+        document.getElementById('fillertext').innerHTML = 'Go to Full-Page CodePen: ';
+        let aTag = document.createElement('a');
+        aTag.setAttribute('href',fullPageURL);
+        aTag.setAttribute('target','_blank'); // open in new window
+        aTag.innerHTML = fullPageURL;
+        document.getElementById('fillertext').appendChild(aTag);
+    }
+}
+
+setFillertextByUrlDetection();
+
+/////////////////////
+
 var inpt = document.getElementById("inpt");
 var btn = document.getElementById("btn");
 var lbl = document.getElementById("lbl");
