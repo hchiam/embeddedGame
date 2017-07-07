@@ -3,7 +3,7 @@ var fullPageURL = 'https://codepen.io/hchiam/full/NjmOdW/';
 function setFillertextByUrlDetection() { // for codepen
     let thisUrl = document.URL;
     if (thisUrl.indexOf('full') === -1) {
-        document.getElementById('fillertext').innerHTML = 'Go to Full-Page CodePen: ';
+        document.getElementById('fillertext').innerHTML = 'Go Full Page: ';
         let aTag = document.createElement('a');
         aTag.setAttribute('href',fullPageURL);
         aTag.setAttribute('target','_blank'); // open in new window
@@ -29,6 +29,7 @@ var count = 0;
 
 var f;
 var c;
+var temp; // temporary
 
 function roundDigits(number, decimals) {
     var decimals = Math.pow(10,decimals);
@@ -84,33 +85,60 @@ function calculate() {
 
 function timedFunction() {
     count++;
-    if (count==1) {
-        display.innerText = f + " F";
-    } else if (count==2) {
-        display.innerText = f + " \u00f7 2";
-    } else if (count==3) {
-        display.innerText = f/2;
-    } else if (count==4) {
-        display.innerText = f/2 + " + " + f/2;
-    } else if (count==5) {
-        display.innerText = f/2 + " + " + f/2 + " \u00f7 10";
-    } else if (count==6) {
-        display.innerText = f/2 + " + " + f/20;
-    } else if (count==7) {
-        display.innerText = f/2+f/20;
-    } else if (count==8) {
-        display.innerText = f/2+f/20 + " -> round";
-    } else if (count==9) {
-        display.innerText = Math.round(f/2+f/20);
-    } else if (count==10) {
-        display.innerText = Math.round(f/2+f/20) + " - 20";
-    } else if (count==11) {
-        display.innerText = Math.round(f/2+f/20) - 20;
-    } else if (count==12) {
-        display.innerText = Math.round(f/2+f/20)-20 + " + 2";
-    } else if (count==13) {
-        display.innerText = "\u2248 " + (Math.round(f/2+f/20)-20 + 2).toString() + " C"; // ≈ approximate C value
-    } else {
-        clearTimeout(tmr);
+    switch(count) {
+      case 1:
+          temp = f;
+          display.innerText = temp + " F";
+          document.getElementById('lbl').style.color = 'whitesmoke';
+          break;
+      case 2:
+          display.innerText = temp + " \u00f7 2";
+          break;
+      case 3:
+          temp /= 2;
+          display.innerText = temp + " -> round";
+          break;
+      case 4:
+          temp = Math.round(temp);
+          display.innerText = temp;
+          break;
+      case 5:
+          display.innerText = temp + " + " + temp;
+          break;
+      case 6:
+          display.innerText = temp + " + " + temp + " \u00f7 10";
+          break;
+      case 7:
+          display.innerText = temp + " + " + temp/10;
+          break;
+      case 8:
+          temp = temp+temp/10;
+          display.innerText = temp;
+          break;
+      case 9:
+          display.innerText = temp + " -> round";
+          break;
+      case 10:
+          temp = Math.round(temp);
+          display.innerText = temp;
+          break;
+      case 11:
+          display.innerText = temp + " - 20";
+          break;
+      case 12:
+          temp -= 20;
+          display.innerText = temp;
+          break;
+      case 13:
+          display.innerText = temp + " + 2";
+          break;
+      case 14:
+          temp += 2;
+          display.innerText = "\u2248 " + (temp).toString() + " C"; // ≈ approximate C value
+          document.getElementById('lbl').style.color = 'maroon';
+          break;
+      default:
+          clearTimeout(tmr);
+          document.getElementById('lbl').style.color = 'whitesmoke';
     }
 }
