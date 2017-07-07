@@ -10,9 +10,9 @@ See [phaserGame](https://github.com/hchiam/phaserGame).
 
 Example web app for converting temperature, with steps for quick mental calculation:
 
-* [app.html](https://github.com/hchiam/embeddedGame/blob/master/app.html) is for the structure ("organization").
-* [app.js](https://github.com/hchiam/embeddedGame/blob/master/app.js) is for the interaction ("actions").
-* [app.css](https://github.com/hchiam/embeddedGame/blob/master/app.css) is for extra presentation stuff ("style"/"looks").
+* [app.html](https://github.com/hchiam/embeddedGame/blob/master/mentTempConv/app.html) is for the structure ("organization").
+* [app.js](https://github.com/hchiam/embeddedGame/blob/master/mentTempConv/app.js) is for the interaction ("actions").
+* [app.css](https://github.com/hchiam/embeddedGame/blob/master/mentTempConv/app.css) is for extra presentation stuff ("style"/"looks").
 
 Screenshot:  (from [hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickly-in.html](http://hchiam.blogspot.ca/2016/09/how-to-convert-temperature-quickly-in.html))
 ![app.jpg](https://github.com/hchiam/embeddedGame/blob/master/app.jpg)
