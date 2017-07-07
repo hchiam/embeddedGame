@@ -7,18 +7,34 @@
  <button class="button" >Click Me</button>
  */
 
+
+* {
+/*overwrite this font in later id's */
+  font-family: arial;
+  margin-left:auto; 
+  margin-right:auto;
+  font-size: 105%;
+}
+
+p:not(#fillertext):not(#bottom-link) {
+  color: whitesmoke;
+}
+
 #fillertext {
   font-size:xx-large;
   text-align:center;
+  color: goldenrod;
 }
 
 td {
     text-align: center;
+    border-radius: 10px;
 }
 
 .specialtable {
     background-color: #4CAF50;
     border-spacing: 10px 0px;
+    border-radius: 10px;
 }
 
 .lobsterfont {
@@ -28,8 +44,8 @@ td {
 /* reference for button CSS styles:  http://www.w3schools.com/css/css3_buttons.asp */
 
 .button {
-    padding: 10px 12px;
-    font-size: 12px;
+    padding: 10px 20px;
+    font-size: 20px;
     text-align: center;
     color: #fff;
     background-color: #4CAF50;
@@ -72,15 +88,8 @@ td {
     transition: 0s
 }
 
-* {
-/*overwrite this font in later id's */
-  font-family: arial;
-  margin-left:auto; 
-  margin-right:auto;
-}
-
 #main-content {
-  background-color: whitesmoke;
+  background-color: grey;/*whitesmoke;*/
 /*   padding: 20px 20px 20px 30%; */
   display: grid;
   grid-template: 1fr / 1fr;
@@ -90,4 +99,13 @@ td {
 #bottom-link {
   padding: 0px 10px 50px 10px;
   text-align: center;
+  color: goldenrod;
+}
+
+.calculate {
+  background-color: blue;
+}
+
+#display {
+  color: goldenrod;
 }
