@@ -2,6 +2,8 @@
 
 This is a collection of HTML5-related apps I've made that can be embedded into HTML pages, such as blog posts.
 
+See other things I'm learning: https://github.com/hchiam/learning
+
 # Game Using Phaser Framework for HTML5
 
 See [phaserGame](https://github.com/hchiam/phaserGame).
