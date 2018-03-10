@@ -1,5 +1,7 @@
 # What is this?
 
+[![HitCount](http://hits.dwyl.io/hchiam/embeddedWebApps.svg)](http://hits.dwyl.io/hchiam/embeddedWebApps)
+
 This is a collection of HTML5-related apps I've made that can be embedded into HTML pages, such as blog posts.
 
 See other things I'm learning: https://github.com/hchiam/learning
